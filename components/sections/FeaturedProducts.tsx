@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/common/SectionHeading"
 import { Button } from "@/components/ui/button-custom"
 import { FEATURED_PRODUCTS } from "@/lib/constants"
 import { StaggerChildren, StaggerItem } from "@/components/common/Stagger"
+import { prefix } from "@/lib/path"
 
 export function FeaturedProducts() {
   return (
@@ -52,7 +53,7 @@ export function FeaturedProducts() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-14 flex justify-center"
         >
-          <Button asLink href="/productos" variant="outline" size="lg">
+          <Button asLink href={prefix("/productos")} variant="outline" size="lg">
             VER TODOS LOS PRODUCTOS
           </Button>
         </motion.div>

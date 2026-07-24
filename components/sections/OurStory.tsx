@@ -5,6 +5,7 @@ import { Container } from "@/components/common/Container"
 import { Button } from "@/components/ui/button-custom"
 import { STORY_TEXT } from "@/lib/constants"
 import { FadeIn } from "@/components/common/FadeIn"
+import { prefix } from "@/lib/path"
 
 export function OurStory() {
   return (
@@ -24,7 +25,7 @@ export function OurStory() {
               {STORY_TEXT}
             </p>
             <div className="mt-8">
-              <Button asLink href="/historia" variant="primary" size="lg">
+              <Button asLink href={prefix("/historia")} variant="primary" size="lg">
                 CONOCE MÁS
               </Button>
             </div>
@@ -33,7 +34,7 @@ export function OurStory() {
           <FadeIn direction="left" delay={0.15}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-mestizo-beige/30">
               <Image
-                src="/images/artesano.webp"
+                src={prefix("/images/artesano.webp")}
                 alt="Cuaderno de viaje artesanal abierto con paisaje ilustrado y cristales naturales"
                 fill
                 className="object-cover"

@@ -6,13 +6,14 @@ import { ChevronDown } from "lucide-react"
 import { HERO_TITLE, HERO_SUBTITLE } from "@/lib/constants"
 import { Button } from "@/components/ui/button-custom"
 import { Logo } from "@/components/common/Logo"
+import { prefix } from "@/lib/path"
 
 export function Hero() {
   return (
     <section id="inicio" className="relative h-screen min-h-[700px] w-full overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero.webp"
+          src={prefix("/images/hero.webp")}
           alt="Mujer contemplando las montañas junto a su perro al atardecer"
           fill
           className="object-cover object-center"
@@ -63,10 +64,10 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="flex flex-wrap gap-4"
             >
-              <Button asLink href="/personas" size="lg">
+              <Button asLink href={prefix("/personas")} size="lg">
                 PERSONAS
               </Button>
-              <Button asLink href="/mascotas" variant="outline" size="lg">
+              <Button asLink href={prefix("/mascotas")} variant="outline" size="lg">
                 MASCOTAS
               </Button>
             </motion.div>

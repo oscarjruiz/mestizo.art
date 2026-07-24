@@ -4,6 +4,7 @@ import Script from "next/script"
 import { Navbar } from "@/components/navigation/Navbar"
 import { Footer } from "@/components/footer/Footer"
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
+import { prefix } from "@/lib/path"
 import "./globals.css"
 
 const inter = Inter({
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "/images/og-image.svg",
+        url: prefix("/images/og-image.svg"),
         width: 1200,
         height: 630,
         alt: SITE_NAME,
@@ -80,18 +81,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_NAME} | Artesanía para personas y mascotas`,
     description: SITE_DESCRIPTION,
-    images: ["/images/og-image.svg"],
+    images: [prefix("/images/og-image.svg")],
     creator: "@mestizo_artesania",
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icons/icon-32x32.svg", sizes: "32x32", type: "image/svg+xml" },
-      { url: "/icons/icon-16x16.svg", sizes: "16x16", type: "image/svg+xml" },
+      { url: prefix("/favicon.ico") },
+      { url: prefix("/icons/icon-32x32.svg"), sizes: "32x32", type: "image/svg+xml" },
+      { url: prefix("/icons/icon-16x16.svg"), sizes: "16x16", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/icons/apple-touch-icon.svg", sizes: "180x180" }],
+    apple: [{ url: prefix("/icons/apple-touch-icon.svg"), sizes: "180x180" }],
   },
-  manifest: "/manifest.json",
+  manifest: prefix("/manifest.json"),
 }
 
 const jsonLd = {

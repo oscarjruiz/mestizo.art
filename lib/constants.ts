@@ -7,6 +7,7 @@ import type {
   InstagramImage,
   FooterSection,
 } from "@/types"
+import { prefix } from "@/lib/path"
 
 export const SITE_NAME = "Mestizo"
 export const SITE_TAGLINE = "Hecho a mano"
@@ -32,7 +33,7 @@ export const COLLECTIONS: Collection[] = [
     label: "COLECCIÓN",
     title: "PERSONAS",
     description: "Piezas que te acompañan\nen cada aventura.",
-    image: "/images/productos/joya-2.webp",
+    image: prefix("/images/productos/joya-2.webp"),
     href: "/personas",
   },
   {
@@ -40,7 +41,7 @@ export const COLLECTIONS: Collection[] = [
     label: "COLECCIÓN",
     title: "MASCOTAS",
     description: "Accesorios hechos con amor\npara sus mejores compañeros.",
-    image: "/images/productos/collar-2.webp",
+    image: prefix("/images/productos/collar-2.webp"),
     href: "/mascotas",
   },
 ]
@@ -50,28 +51,28 @@ export const FEATURED_PRODUCTS: Product[] = [
     id: "pulsera-caminante",
     name: "Pulsera Caminante",
     price: "$55.000 COP",
-    image: "/images/productos/pulsera-caminante.webp",
+    image: prefix("/images/productos/pulsera-caminante.webp"),
     slug: "pulsera-caminante",
   },
   {
     id: "collar-aventurina",
     name: "Collar Aventurina",
     price: "$65.000 COP",
-    image: "/images/productos/collar-aventurina.webp",
+    image: prefix("/images/productos/collar-aventurina.webp"),
     slug: "collar-aventurina",
   },
   {
     id: "collar-bosque",
     name: "Collar Bosque",
     price: "$60.000 COP",
-    image: "/images/productos/collar-bosque.webp",
+    image: prefix("/images/productos/collar-bosque.webp"),
     slug: "collar-bosque",
   },
   {
     id: "cuaderno-viaje",
     name: "Cuaderno de Viaje",
     price: "$45.000 COP",
-    image: "/images/productos/cuaderno-viaje.webp",
+    image: prefix("/images/productos/cuaderno-viaje.webp"),
     slug: "cuaderno-viaje",
   },
 ]
@@ -100,12 +101,12 @@ export const BENEFITS: Benefit[] = [
 ]
 
 export const INSTAGRAM_IMAGES: InstagramImage[] = [
-  { id: "ig-1", src: "/images/instagram/ig-1.webp", alt: "Joyería artesanal Mestizo" },
-  { id: "ig-2", src: "/images/instagram/ig-2 (1).webp", alt: "Cuaderno artesanal hecho a mano" },
-  { id: "ig-3", src: "/images/instagram/ig-3.webp", alt: "Compañero de aventuras con collar Mestizo" },
-  { id: "ig-4", src: "/images/instagram/ig-4.webp", alt: "Proceso artesanal en el taller Mestizo" },
-  { id: "ig-5", src: "/images/instagram/ig-5.webp", alt: "Paisajes que inspiran nuestras colecciones" },
-  { id: "ig-6", src: "/images/instagram/ig-6.webp", alt: "Pulsera Caminante en la naturaleza" },
+  { id: "ig-1", src: prefix("/images/instagram/ig-1.webp"), alt: "Joyería artesanal Mestizo" },
+  { id: "ig-2", src: prefix("/images/instagram/ig-2 (1).webp"), alt: "Cuaderno artesanal hecho a mano" },
+  { id: "ig-3", src: prefix("/images/instagram/ig-3.webp"), alt: "Compañero de aventuras con collar Mestizo" },
+  { id: "ig-4", src: prefix("/images/instagram/ig-4.webp"), alt: "Proceso artesanal en el taller Mestizo" },
+  { id: "ig-5", src: prefix("/images/instagram/ig-5.webp"), alt: "Paisajes que inspiran nuestras colecciones" },
+  { id: "ig-6", src: prefix("/images/instagram/ig-6.webp"), alt: "Pulsera Caminante en la naturaleza" },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
